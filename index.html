@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>JavaScript Calculator</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Our JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
+
+    <div class="w-[360px] bg-gray-900 p-6 rounded-2xl shadow-2xl">
+
+        <h1 class="text-white text-2xl font-bold text-center mb-5">
+            Calculator
+        </h1>
+            <div class="bg-black rounded-xl p-4 mb-5 text-right">
+    <div id="previous-display" class="text-gray-400 text-lg h-7">
+
+    </div>
+
+    <div id="current-display" class="text-white text-4xl font-semibold overflow-hidden" >
+        0
+    </div>
+    <div class="grid grid-cols-4 gap-3">
+    <!-- Row 1 -->
+    <button id="clear" class="bg-red-500 hover:bg-red-600 text-white text-xl font-semibold p-4 rounded-xl">
+        AC
+    </button>
+
+    <button id="delete" class="bg-gray-600 hover:bg-gray-500 text-white text-xl font-semibold p-4 rounded-xl">
+        DEL
+    </button>
+
+    <button data-operator="%"
+        class="operator bg-gray-600 hover:bg-gray-500 text-white text-xl font-semibold p-4 rounded-xl"
+    >
+        %
+    </button>
+
+    <button data-operator="/"
+        class="operator bg-orange-500 hover:bg-orange-600 text-white text-xl font-semibold p-4 rounded-xl"
+    >
+        ÷
+    </button>
+    <!-- Row 2 -->
+    <button
+        id="button-seven"
+        data-number="7"
+        class="number bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        7
+    </button>
+
+    <button
+        id="button-eight"
+        data-number="8"
+        class="number bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        8
+    </button>
+
+    <button
+        data-number="9"
+        class="number bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        9
+    </button>
+
+    <button
+        data-operator="*"
+        class="operator bg-orange-500 hover:bg-orange-600 text-white text-xl p-4 rounded-xl"
+    >
+        ×
+    </button>
+
+
+    <!-- Row 3 -->
+
+    <button
+        data-number="4"
+        class="number bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        4
+    </button>
+
+    <button
+        data-number="5"
+        class="number bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        5
+    </button>
+
+    <button
+        data-number="6"
+        class="number bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        6
+    </button>
+
+    <button
+        data-operator="-"
+        class="operator bg-orange-500 hover:bg-orange-600 text-white text-xl p-4 rounded-xl"
+    >
+        −
+    </button>
+
+
+    <!-- Row 4 -->
+
+    <button
+        data-number="1"
+        class="number bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        1
+    </button>
+
+    <button
+        data-number="2"
+        class="number bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        2
+    </button>
+
+    <button
+        data-number="3"
+        class="number bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        3
+    </button>
+
+    <button
+        data-operator="+"
+        class="operator bg-orange-500 hover:bg-orange-600 text-white text-xl p-4 rounded-xl"
+    >
+        +
+    </button>
+
+
+    <!-- Row 5 -->
+
+    <button
+        data-number="0"
+        class="number col-span-2 bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        0
+    </button>
+
+    <button
+        id="decimal"
+        class="bg-gray-700 hover:bg-gray-600 text-white text-xl p-4 rounded-xl"
+    >
+        .
+    </button>
+
+    <button
+        id="equals"
+        class="bg-blue-500 hover:bg-blue-600 text-white text-xl font-semibold p-4 rounded-xl"
+    >
+        =
+    </button>
+
+</div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
